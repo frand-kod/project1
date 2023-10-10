@@ -1,0 +1,85 @@
+/* link external */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@400;700&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* global config */
+:root {
+  --primary: #287999;
+  --secondary: #145c74;
+  --aksen: #64ccc5;
+  --complement: #fcd911f8;
+  --font-primary: Raleway, Open Sans;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.item-center{
+    align-items: center;
+    justify-content: center;
+}
+/* --- */
+
+header {
+  display: flex;
+  background-color: var(--primary);
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25vh 0;
+  box-shadow: #145c74 .2px 2px 1px;
+} 
+
+.title {
+  display: flex;
+  height: auto;
+  margin-left: 1.5rem;
+}
+
+.title img {
+  width: 1.75em;
+  height: 1.75em;
+  margin: 1rem;
+}
+
+.title h1 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  line-height: 1.5rem;
+  letter-spacing: 0.09vh;
+}
+.title h1 span {
+  display: inline-block;
+
+  padding: 0.3rem;
+  margin: 0.15rem 0;
+  border-radius: 1vh;
+  color: var(--complement);
+}
+.nav-bar {
+  font-size: 0.8rem;
+}
+.nav-bar ul {
+display: flex;
+  margin-right: 1rem;
+  list-style-type: none;
+}
+.nav-bar ul li a{
+
+  margin: .2vh;
+  padding-right: 2vh;
+  color: white;
+}
+.nav-bar ul .end{
+    border: none;
+}
