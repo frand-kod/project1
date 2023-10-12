@@ -1,6 +1,6 @@
-/* link external */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@400;700&display=swap');
+ /* link external */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@600&family=Raleway:wght@400;700&display=swap');
 *,
 *::before,
 *::after {
@@ -10,11 +10,11 @@
 }
 /* global config */
 :root {
-  --primary: #287999;
-  --secondary: #145c74;
+  --primary: #145c74;
+  --secondary: #287999;
   --aksen: #64ccc5;
   --complement: #fcd911f8;
-  --font-primary: Raleway, Open Sans;
+  --font-primary: 'Open Sans', sans-serif;
 }
 
 body {
@@ -23,6 +23,16 @@ body {
 a{
     text-decoration: none;
     color: white;
+}
+
+.large-text{
+  font-size: large;
+}
+.small-txt{
+  font-size: small;
+}
+.medium-text{
+  font-size: medium;
 }
 .item-center{
     align-items: center;
@@ -43,7 +53,7 @@ header {
 .title {
   display: flex;
   height: auto;
-  margin-left: 1.5rem;
+  margin-left: 1.rem;
 }
 
 .title img {
@@ -79,7 +89,42 @@ display: flex;
   margin: .2vh;
   padding-right: 2vh;
   color: white;
+
 }
 .nav-bar ul .end{
     border: none;
+
 }
+
+.content{
+  display: flex;
+  background-color: var(--primary);
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.content .main-title{
+  flex-direction: column ;
+  justify-content: space-between;
+  color: rgb(245, 242, 242);
+ padding: 1rem;
+
+
+}
+.content .aside-title{
+justify-content: end;
+align-items: center;
+width: 20%;
+}
+.content .aside-title img{
+  height: 12rem;
+}
+
+
+
+
+
+
+
+
