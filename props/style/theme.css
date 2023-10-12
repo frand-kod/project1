@@ -64,9 +64,9 @@ header {
 }
 
 .title h1 {
-  font-size: 1.5rem;
+  font-size: 4vh;
   font-weight: bolder;
-  line-height: 1.5rem;
+  line-height: 3vh;
 
 
 }
@@ -79,7 +79,7 @@ header {
   color: var(--complement);
 }
 .nav-bar {
-  font-size: 0.8rem;
+  font-size: 2vh;
 }
 .nav-bar ul {
 display: flex;
@@ -133,55 +133,69 @@ display: flex;
 
 main{
   display: flex;
-  justify-content: center;
+  border-radius: 1vh;
   flex-direction: column;
-}
-article{
-  padding: 2rem;
+} 
+.banner{
+  display: flex;
+  padding: 0 6rem ;
   text-align: center;
-  font-size: 4.5vh;
-  margin: 4rem;
-  padding: 2rem;
-}
-/* article droplist */
-article .drop-list{
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-}
-
-article .list{
-  width: 30vh;
-  background: var(--tr-bg-secondary);
-  border-radius: 1vh ;
-  margin: 2rem 5rem;
-  padding: .05rem;
-}
-
-.model{
-  margin: 0 2rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
   justify-content: center;
-
-}
-
-.model h1{
-  margin: 2rem 0;
-}
-.model .img-wrapper{
-  justify-content: center;
-  align-items: center;
   background-color: var(--tr-bg-secondary);
 }
-.model img{
-  border-radius: 2vh;
-  width: 50%;
+.banner .bnr-title{
+  margin: 7rem 3rem;
 }
 
+article{
+  padding: 1rem;
+}
+.model{
+  margin: 2rem 0;
+  align-items: center;
+}
+.model h1{
+  margin-bottom: 2rem;
+}
+.model .img-wrapper{
 
+}
+.model img{
+  width: 20rem;
+  border-radius: 1vh;
+  margin: 2rem 0;
+}
+aside{
+  position: relative;
+  right: 2vh;
+  top: 2vh;
+  bottom: auto;
+  left: auto;
+}
 
+footer{
+  display: flex;
+  margin: 2rem 0;
+  background: var(--secondary);
+  color:white
+}
+footer .about{
 
+}
+footer .contact{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+}
+.sosmedlinked ul{
+  padding: .5rem 0;
+  margin: 1rem ;
+  list-style-type: none;
+}
+.sosmedlinked ul li img{
+  width: 2vh;
+}
 
 
