@@ -147,7 +147,9 @@ main{
 .banner .bnr-title{
   margin: 7rem 3rem;
 }
-
+.wrapper-container{
+  display: flex;
+}
 article{
   padding: 1rem;
 }
@@ -166,36 +168,68 @@ article{
   border-radius: 1vh;
   margin: 2rem 0;
 }
-aside{
-  position: relative;
-  right: 2vh;
-  top: 2vh;
-  bottom: auto;
-  left: auto;
+
+aside .hide{
+  display: none;
+}
+aside .show{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin: 0;
+    background-color:var(--tr-bg-primary);
+  }
+aside img{
+  border-radius: 50%;
+  width: 12vh;
+  margin: 4vh 8vh ;
 }
 
 footer{
   display: flex;
-  margin: 2rem 0;
+  margin: 2rem 0 0;
   background: var(--secondary);
-  color:white
+  color:white;
+  padding: 12vh 8vh ;
+  justify-content: space-evenly;
+  align-items: end;
 }
 footer .about{
+  display: block;
 
 }
-footer .contact{
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: space-around;
+footer p{
+  font-size: 1.9vh;
 }
-.sosmedlinked ul{
+footer h2{
+ font-size: 3.5vh;
+}
+footer .contact{
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+footer .sosmedlinked ul{
+  display: flex;
+flex-direction: row;
   padding: .5rem 0;
-  margin: 1rem ;
+  margin: 0 1rem ;
   list-style-type: none;
+  justify-content: center;
+
 }
 .sosmedlinked ul li img{
   width: 2vh;
+  margin: .1vh 1.2vh;
 }
+.sosmedlinked ul li:hover{
+  border-bottom:.2vh solid white ;
+}
+
 
 
